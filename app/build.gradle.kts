@@ -7,16 +7,16 @@ plugins {
 
 android {
     namespace = "xyz.sirphotch.kvaesitsoplugin.publictransport"
-    compileSdk = 35
+    compileSdk = 36
     buildToolsVersion = "35.0.1"
 
     defaultConfig {
         applicationId = "xyz.sirphotch.kvaesitsoplugin.publictransport"
         minSdk = 30
-        targetSdk = 35
+        targetSdk = 36
         // YYYYMMNN where NN is number of release of month MM
-        versionCode = 20250402
-        versionName = "1.3"
+        versionCode = 20251000
+        versionName = "1.4"
 
         vectorDrawables {
             useSupportLibrary = true
@@ -38,13 +38,6 @@ android {
             isDebuggable = true
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-    kotlinOptions {
-        jvmTarget = "17"
-    }
     buildFeatures {
         compose = true
         buildConfig = true
@@ -56,6 +49,13 @@ android {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
 
@@ -80,6 +80,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.compose.icons)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.material3.android)
     implementation(libs.androidx.lifecycle.runtime.compose.android)
