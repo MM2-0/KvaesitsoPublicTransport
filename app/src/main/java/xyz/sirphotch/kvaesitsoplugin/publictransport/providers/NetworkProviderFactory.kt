@@ -5,7 +5,6 @@ import de.schildbach.pte.BsvagProvider
 import de.schildbach.pte.DbProvider
 import de.schildbach.pte.DingProvider
 import de.schildbach.pte.DubProvider
-import de.schildbach.pte.EireannProvider
 import de.schildbach.pte.GvhProvider
 import de.schildbach.pte.KvvProvider
 import de.schildbach.pte.LinzProvider
@@ -17,11 +16,7 @@ import de.schildbach.pte.NetworkProvider
 import de.schildbach.pte.NsProvider
 import de.schildbach.pte.NvbwProvider
 import de.schildbach.pte.RtProvider
-import de.schildbach.pte.RtaChicagoProvider
-import de.schildbach.pte.StvProvider
-import de.schildbach.pte.SydneyProvider
 import de.schildbach.pte.TlemProvider
-import de.schildbach.pte.VblProvider
 import de.schildbach.pte.VgnProvider
 import de.schildbach.pte.VmvProvider
 import de.schildbach.pte.VrnProvider
@@ -52,11 +47,7 @@ object NetworkProviderFactory {
                 Provider.Mvg -> MvgProvider()
                 Provider.Mvv -> MvvProvider()
                 Provider.Nvbw -> NvbwProvider()
-                Provider.RtaChicago -> RtaChicagoProvider()
-                Provider.Stv -> StvProvider()
-                Provider.Sydney -> SydneyProvider()
                 Provider.Tlem -> TlemProvider()
-                Provider.Vbl -> VblProvider()
                 Provider.Vgn -> VgnProvider()
                 Provider.Vmv -> VmvProvider()
                 Provider.Vrn -> VrnProvider()
@@ -66,7 +57,6 @@ object NetworkProviderFactory {
                 Provider.Vvs -> VvsProvider()
                 Provider.Vvv -> VvvProvider()
                 Provider.Wien -> WienProvider()
-                Provider.Eireann -> EireannProvider()
                 Provider.Ns -> NsProvider()
                 Provider.Rt -> RtProvider()
                 Provider.Negentwee -> NegentweeProvider()
